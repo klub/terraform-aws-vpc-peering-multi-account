@@ -1,5 +1,5 @@
 locals {
 //  enabled = "${var.enabled == "true"}"
-  enabled = "${var.enabled == "true" ? 1 : 0}"
+  enabled = "${var.enabled == "true" ? "true" : "false"}"
   count   = "${local.enabled ? 1 : 0}"
 }
